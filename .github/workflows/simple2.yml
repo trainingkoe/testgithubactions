@@ -11,4 +11,11 @@ jobs:
           import platform
           print (platform.processor())
         shell: python
-          
+  run-windows-command:
+    runs-on: windows-latest
+    steps:
+      - name: Fetch Directory
+        run: Get-Location
+      - name: Directory bash
+        run: pwd
+        shell: bash
