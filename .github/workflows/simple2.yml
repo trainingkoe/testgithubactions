@@ -10,5 +10,5 @@ jobs:
         run: |
           import platform
           print (platform.processor())
-          shell: python
+        shell: python
           
